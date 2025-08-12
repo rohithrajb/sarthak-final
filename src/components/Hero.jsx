@@ -4,6 +4,7 @@ import Image from 'next/image';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import DownloadIcon from '@mui/icons-material/Download';
+import Typewriter from 'typewriter-effect';
 
 export default function Hero() {
   return (
@@ -101,7 +102,7 @@ export default function Hero() {
             >
               Sarthak Hatwar
             </Typography>
-            
+
             <Typography
               variant="h2"
               component={motion.h2}
@@ -127,13 +128,49 @@ export default function Hero() {
               sx={{
                 fontSize: { xs: '1rem', md: '1.25rem' },
                 maxWidth: '600px',
-                mb: 4,
                 color: 'text.secondary',
                 lineHeight: 1.6,
               }}
+            // className={styles.typewriter}
             >
-              Welcome to my portfolio, where I showcase my skills and projects in software development, AI, and data science."
+              Welcome to my portfolio,
             </Typography>
+
+            <Box sx={{
+              fontSize: { xs: '1rem', md: '1.25rem' },
+              maxWidth: '600px',
+              mb: 4,
+              color: 'text.secondary',
+              lineHeight: 1.6,
+            }}>
+              <Typewriter options={{
+                delay: 40,
+              }}
+                onInit={(typewriter) => {
+                  typewriter.typeString('AWS & Azure | ')
+                    .pauseFor(500).typeString('ETL Pipelines | ')
+                    .pauseFor(500).typeString('PySpark | ')
+                    .pauseFor(500).typeString('Data Warehousing | ')
+                    .pauseFor(500).typeString('Big Data Systems | ')
+                    .pauseFor(500).typeString('Power BI/Tableau')
+                    // .deleteAll()
+                    .start();
+                }}
+              />
+            </Box>
+            {/* <Typography variant="body1"
+              component={motion.p}
+              // initial={{ y: 20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 0.5 }}
+              sx={{
+                fontSize: { xs: '1rem', md: '1.25rem' },
+                maxWidth: '600px',
+                mb: 4,
+                color: 'text.secondary',
+                lineHeight: 1.6,
+              }}>
+              </Typography> */}
 
             <Box
               component={motion.div}
@@ -242,7 +279,7 @@ export default function Hero() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.7 }}
-                href="public/SarthakResume.pdf"
+                href="https://drive.google.com/uc?export=download&id=1QRh_Hi6qupQ7iwttWBwjrexDkC5v6Wyj"
                 download
                 startIcon={<DownloadIcon className="download-icon" />}
                 sx={{
@@ -300,10 +337,10 @@ export default function Hero() {
               }}
             >
               <Image
-                src="/portfolio/images/my-profile.jpg"
+                src="/images/my-profile.png"
                 alt="Sarthak  "
                 fill
-                style={{ 
+                style={{
                   objectFit: 'cover',
                   objectPosition: 'center 40%',
                 }}

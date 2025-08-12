@@ -5,10 +5,21 @@ import WorkIcon from '@mui/icons-material/Work';
 import Link from '@mui/material/Link';
 
 const experiences = [
+   {
+    title: 'Data Engineer Intern',
+    company: 'Info Origin Inc.  ',
+    period: '04/2025 – 07/2025',
+    achievements: [
+      'Automated Azure Logic Apps + Azure Functions ETL pipelines, reducing processing latency by 35%.',
+      'Integrated on-premise sources with Azure cloud using Key Vault, data gateways, and managed identities.',
+      'Owned data quality for business-critical datasets, ensuring reliability for analytics teams.'
+    ]
+  },
+
   {
     title: 'Data Engineer Intern',
     company: 'Cisco',
-    companyUrl: 'https://www.auberginesolutions.com/',
+  
     period: '06/2024 – 05/2025',
     achievements: [
       'Built scalable ETL pipelines using Spark and Glue to process 5TB+ telemetry data/day, optimizing system behavior and network performance by 40% at Cisco.'
@@ -21,7 +32,7 @@ const experiences = [
     {
     title: 'Data Analyst',
     company: 'Codon Technologies ',
-    companyUrl: 'https://www.auberginesolutions.com/',
+  
     period: '08/2022 – 07/2023',
     achievements: [
       'Designed and deployed Kafka-Kinesis pipelines for real-time data processing, enabling early bottleneck detectionand improving system throughput predictability.'
@@ -118,14 +129,14 @@ export default function Experience() {
             </Typography>
 
             <Link
-              href={exp.companyUrl}
+              // href={exp.companyUrl}
               target="_blank"
               rel="noopener noreferrer"
               sx={{
                 textDecoration: 'none',
-                '&:hover': {
-                  textDecoration: 'underline',
-                },
+                // '&:hover': {
+                //   textDecoration: 'underline',
+                // },
               }}
             >
               <Typography

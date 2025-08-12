@@ -125,13 +125,20 @@ export default function About() {
           sx={aboutStyles.description}
         >
          
-          I possess<Box component="span" sx={{
-            backgroundColor: 'rgba(172, 18, 47, 0.15)',
-            padding: '1px 8px',
+          Data Engineer <Box component="span" sx={{
+            backgroundColor: 'rgba(216, 29, 63, 0.15)',
+            padding: '1px 4px',
             borderRadius: '4px',
             fontWeight: 600,
-          }}>over 2+ years of hands-on industry experience</Box> with a strong foundation in Machine Learning, Cloud platforms, and Data Analysis. I am passionate about utilizing data-driven insights to solve complex problems and drive innovation. Currently pursuing a Master’s in Data Science at the University of Texas at Arlington, I am dedicated to continuous learning and making impactful contributions.
-        </Typography>
+          }}>with 2+ years of experience</Box> in designing, automating, and optimizing ETL pipelines, data warehouses, and real-time analytics across AWS, Azure, and Databricks.
+            Built PySpark + AWS Glue pipelines processing 5TB+ daily telemetry with automated quality validation (PyDeequ).
+            Reduced ETL latency by 35% through Azure Logic Apps & Functions automation.
+            Delivered forecasting dashboards in Power BI improving planning accuracy by 20%.
+            Migrated ETL workflows to AWS Redshift via Airflow & dbt, achieving 90% schema accuracy.
+            Certified AWS Data Engineer Associate, Azure Fundamentals, and SQL for Data Analysis.
+            Passionate about creating scalable, secure, and high-impact data solutions that empower teams with actionable insights.
+            Always exploring innovative ways to solve business challenges through data-driven decision-making.
+                  </Typography>
 
         <Typography
           variant="h3"

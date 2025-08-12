@@ -12,28 +12,28 @@ const projects = [
     title: 'Tokyo Olympics Data Analysis',
     description: 'Migrated raw data to Azure Data Lake, used Databricks for cleaning and transformation, transferred data back to the lake, and created Tableau dashboards through Azure Synapse for enhanced analytics.',
     technologies: ['Azure Datalake Gen 2', 'Azure DataFactory', 'Azure DataBricks', 'Azure Synapse', 'Tableau Public',],
-    githubUrl: 'https://github.com/hetvijoshi/AcademiVerse',
+    //githubUrl: 'https://github.com/hetvijoshi/AcademiVerse',
     emoji: '🤖',
   },
   {
     title: 'Customer Churn Prediction',
     description: 'Built Delta Lake pipelines with Databricks DLT and dbt, deployed Flask APIs on AWS, integrated Airflow for automation, and applied churn modeling to optimize logistics and reduce latency by 40%.',
     technologies: ['Databricks DLT','Flask','AWS Lambda','AWS EC2','Airflow','Docker','Churn Modeling'],
-    githubUrl: 'https://github.com/hetvijoshi/SpotCrime',
+    //githubUrl: 'https://github.com/hetvijoshi/SpotCrime',
     emoji: '🗺️',
   },
   {
     title: 'Parkinsons Disease Detection using Handwriting',
     description: 'Engineered a handwriting classification pipeline using VGG16, optimized Hive-based feature extraction, and delivered a diagnostic dashboard, improving evaluation timelines by 30%.',
     technologies: ['VGG16', 'Hive', 'Deep Learning', 'Diagnostic Dashboard'],
-    githubUrl: 'https://github.com/gadarajainik/GeoCompensate',
+    //githubUrl: 'https://github.com/gadarajainik/GeoCompensate',
     emoji: '⏰',
   },
   {
     title: 'Knowledge Distilation',
     description: 'Knowledge distillation is a technique where a smaller model learns from a larger models soft predictions to improve efficiency and performance.',
     technologies: ['Transfer Learning', 'Deep Learning', 'Google Colab', 'Cloud Functions', 'GitHub Actions'],
-    githubUrl: 'https://github.com/gadarajainik/DutchNSettle',
+    //githubUrl: 'https://github.com/gadarajainik/DutchNSettle',
     emoji: '💸',
   },
 ];
@@ -163,7 +163,7 @@ export default function Projects() {
                   </Stack>
                 </Box>
 
-                <Stack
+                {/* <Stack
                   direction="row"
                   spacing={1}
                   sx={styles.cardActions}
@@ -188,7 +188,7 @@ export default function Projects() {
                       <LaunchIcon />
                     </IconButton>
                   )}
-                </Stack>
+                </Stack> */}
               </Card>
             </Grid>
           ))}
