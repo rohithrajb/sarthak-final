@@ -7,40 +7,35 @@ import Link from '@mui/material/Link';
 const experiences = [
    {
     title: 'Data Engineer Intern',
-    company: 'Info Origin Inc.  ',
-    period: '04/2025 – 07/2025',
+    company: 'United Health Group (US)',
+    period: '08/2024 – Present',
     achievements: [
-      'Automated Azure Logic Apps + Azure Functions ETL pipelines, reducing processing latency by 35%.',
-      'Integrated on-premise sources with Azure cloud using Key Vault, data gateways, and managed identities.',
-      'Owned data quality for business-critical datasets, ensuring reliability for analytics teams.'
+      'Automated ETL pipelines using Azure Logic Apps and Azure Functions, reducing latency by 35%.',
+      'Implemented secure analytics workflows via Azure Key Vault and IAM policies.',
+      'Streamlined operations through enhanced system integration and data flow orchestration.',
+      'Created monitoring scripts for ETL health checks, reducing incident resolution time by 30%.',
+      'Designed real-time PySpark + AWS Glue pipelines for 5TB+ daily telemetry data with automated quality checks using PyDeequ.',
+      'Developed forecasting models in Power BI to optimize AWS resource planning, improving accuracy by 20%.',
+      'Built Python-based simulation tools, accelerating experimentation cycles by 25% and reducing testing costs.',
     ]
   },
 
   {
-    title: 'Data Engineer Intern',
-    company: 'Cisco',
-  
-    period: '06/2024 – 05/2025',
-    achievements: [
-      'Built scalable ETL pipelines using Spark and Glue to process 5TB+ telemetry data/day, optimizing system behavior and network performance by 40% at Cisco.'
-      , 'Consolidated data from multiple platforms (e.g., Meraki, Webex) into a unified S3-based data lake, managing 3M+ records and reducing duplication by 30%.'
-      , 'Developed PyDeequ-based anomaly detection models, using CloudWatch and Splunk, improving data reliability to 99% and reducing incident response by 25%.'
-      ,'Created Tableau dashboards to track device performance, improving regional traffic and capacity planning, with 40% faster report generation.'
-    ],
-  },
-
-    {
     title: 'Data Analyst',
-    company: 'Codon Technologies ',
+    company: 'ACL Digital (India)',
   
-    period: '08/2022 – 07/2023',
+    period: '04/2021 – 05/2023',
     achievements: [
-      'Designed and deployed Kafka-Kinesis pipelines for real-time data processing, enabling early bottleneck detectionand improving system throughput predictability.'
-      , 'Built Power BI dashboards and visualizations for key performance indicators, reducing manual reporting by 40%and empowering self-service analytics.'
-      , 'Implemented ETL workflows using Python and Airflow to move clinical datasets from GCP to AWS Redshift, ensuring over 90% schema consistency.'
-      ,'Created Delta Lake pipelines for 2TB+ data processing with 92% accuracy in churn predictions and Flask APIsdeployed on AWS Lambda and EC2'
+      'Delivered interactive Power BI dashboards for logistics KPIs, cutting reporting delays by 40%.',
+      'Migrated ETL pipelines to AWS Redshift via Airflow and dbt, achieving 90% schema compatibility.',
+     'Executed 10+ pricing A/B tests, reducing churn by 8%.',
+     'Designed automated Excel + SQL reporting templates, saving ~15 hours/week of manual effort for the analytics team.',
+     'Conducted customer segmentation using clustering algorithms, enabling targeted marketing campaigns that improved engagement by 12%.',
+     'Strengthened data governance with role-based access controls and encryption in AWS & Azure.',
+      'Collaborated with DevOps to implement CI/CD pipelines for data workflows, enabling faster deployment cycles and reducing manual intervention.',
+      'Enhanced telemetry anomaly detection by integrating ML-based classifiers into real-time streams, improving detection rates by 22%.',
     ],
-  },
+  },  
 ];
 
 export default function Experience() {
