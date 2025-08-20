@@ -6,7 +6,7 @@ export async function generateMetadata() {
     openGraph: {
       title: 'Hetvi Joshi - Software Engineer',
       description: 'Crafting robust and scalable software solutions with precision and innovation.',
-      images: ['/portfolio/images/my-profile.jpg'],
+      images: ['/images/my-profile.png'],
     },
     alternates: {
       canonical: 'https://hetvijoshi.com',
@@ -24,7 +24,7 @@ export async function generateMetadata() {
       name: 'Hetvi Joshi',
       jobTitle: 'Software Engineer',
       url: 'https://hetvijoshi.com',
-      image: '/portfolio/images/my-profile.jpg',
+      image: '/images/my-profile.png',
       sameAs: [
         'https://linkedin.com/in/hetvi-joshi',
         'https://github.com/hetvijoshi'

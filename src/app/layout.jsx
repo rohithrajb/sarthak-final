@@ -173,7 +173,7 @@ export default function RootLayout({ children }) {
         {/* Preload critical assets */}
         <link 
           rel="preload" 
-          href="/portfolio/images/my-profile.jpg" 
+          href="/images/my-profile.png"
           as="image"
         />
         <title>Sarthak Hatwar | Data Engineer </title>
