@@ -4,10 +4,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "predeploy": "npm run build && shx touch out/.nojekyll",
-    "deploy": "gh-pages -d out",
-    "dev": "next dev",
     "build": "next build",
+    "export": "next export",
+    "postexport": "shx touch out/.nojekyll",
+    "predeploy": "npm run build && npm run export && npm run postexport",
+    "deploy": "npm run predeploy && gh-pages -d out --nojekyll",
+    "dev": "next dev",
     "start": "next start",
     "lint": "next lint"
   },
