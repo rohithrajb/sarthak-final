@@ -337,7 +337,7 @@ export default function Hero() {
               }}
             >
               <Image
-                src="/images/my-profile.png"
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/my-profile.png`}
                 alt="Sarthak  "
                 fill
                 style={{

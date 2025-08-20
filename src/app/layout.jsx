@@ -173,7 +173,7 @@ export default function RootLayout({ children }) {
         {/* Preload critical assets */}
         <link 
           rel="preload" 
-          href="/images/my-profile.png"
+          href={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/my-profile.png`}
           as="image"
         />
         <title>Sarthak Hatwar | Data Engineer </title>
